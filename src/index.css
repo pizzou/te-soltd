@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  background: linear-gradient(
+    92.23deg,
+    #5667ff 21.43%,
+    #5f6cf7 50.63%,
+    #3bace2 100%,
+    #406aff 117.04%
+  );
+  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+}
+
+.btn:hover {
+  background: linear-gradient(
+    92.23deg,
+    #406aff 21.43%,
+    #3bace2 50.63%,
+    hsl(55, 84%, 57%) 100%,
+    #f7ff56 117.04%
+  );
+}
+
+
+@layer base {
+   
+    .h2 {
+      @apply text-[32px] mb-6 tracking-[10%] uppercase;
+    }
+    .h3 {
+      @apply font-semibold text-[26px] mb-6 leading-[46px];
+    }
+    .btn {
+      @apply rounded-full  text-white font-medium;
+    }
+    .btn-sm {
+      @apply h-[48px] px-6 text-sm;
+    }
+    .btn-lg {
+      @apply h-[56px] px-10 text-base;
+    }
+    .btn-link {
+      @apply text-base;
+    }
+    .text-gradient {
+      @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[rgb(232,255,86)] font-bold  hover:from-[rgb(230,255,86)] hover:to-[#42A6E3];
+    }
+    .section {
+      @apply py-8 lg:py-24 lg:h-screen flex items-center;
+    }
+  }
+  
